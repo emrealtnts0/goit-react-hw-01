@@ -1,0 +1,55 @@
+.isOnlinee {
+    color: green;
+}
+
+.isOffline {
+    color: red;
+}
+
+.friend_list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 64px;
+}
+
+.friend_item {
+    border-radius: 8px; /* Updated for a more card-like appearance */
+    border: solid 1px #ccc; /* Softer border color */
+    padding: 16px; /* Increased padding for better spacing */
+    background-color: #ffffff; /* Updated to a vibrant background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box-shadow for depth */
+    transition: transform 0.3s, background-color 0.3s; /* Added transition for hover effect */
+    animation: fadeIn 0.5s ease-in-out; /* Added fade-in animation */
+}
+
+.friend_item:hover {
+    background-color: #e0e0e0; /* Highlight effect on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.friend_list_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image_svg {
+    margin-bottom: 8px;
+}
+
+.friend_name {
+    letter-spacing: .02em;
+    line-height: 1.5;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
